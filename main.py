@@ -11,14 +11,14 @@ white = 0
 counts = Counter(temp_list)
 
 black = counts["Black"]
-grey = counts["Grey"]
+grey = counts["Gray"]
 cin = counts["Cinnamon"]
 
 data_dict = {
-    "Primary Colour": ["Black", "Grey", "Cinnamon"],
+    "Primary Colour": ["Black", "Gray", "Cinnamon"],
     "scores":[
         counts.get("Black", 0),
-        counts.get("Grey", 0),
+        counts.get("Gray", 0),
         counts.get("Cinnamon", 0)]}
 
 path = pandas.DataFrame(data_dict)
